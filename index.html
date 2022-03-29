@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mole molecalulator periodic table chemistry   ">
+    <meta name="keywords" content="chemistry calculator periodic table mole mol molcalculator  ">
+    <title>MolCalculator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="indexv2.css">
+    <link rel="shortcut icon" href="">
+    <meta name="description" content="Click on the elements in the periodic table to perform mathematical calculations with them."/>
+     
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap" rel="stylesheet">
+   
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8936363525895437"
+     crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+
+            <nav id="navbar" class="navbar navbar-expand-md navbar-light">
+             <ul class="navbar-nav">
+               <a href="#"   class="navbar-brand">Mol Calculator </a>      
+
+                <li class="nav-item" id="calculation">  <button href="#"  id="buttontext" class="equals-button myButton nav-link"><div id="calculate-text" class="">Calculate</div></button>  </li>
+             </ul>
+            </nav>
+            
+ 
+    <div class="display">
+        <h1 id="answer-display" class="text-center">Press on the elements to display their mass.  </h1>
+        <h1 id="text" class="text-center">Then choose a mathematical operation</h1>
+    </div>
+   
+    <div class="periodic-table text-center">
+
+        <div class=calculator-main>
+            <h1 class="text-center calculator-second"><button class="calculator-fat operation operationSymbol ">*</button><button class="calculator-fat operation operationSymbol" >/</button><button class="calculator-fat operation operationSymbol" >+</button><button id="minus" class="calculator-fat operation operationSymbol" >-</button><button id="calculator" class="mol
+              " ><span id="hidden">6.0221409e23</span> <span class="hidden">mole</span><span>Mol</span></button> </h1>
+        
+        </div>
+        <div class="element-grid"  >
+
+        <div class="element-periodic"  data-element-hydrogen > <button class="box hydrogen blue  "><p class="first-element">Hydrogen</p><p class="first-element">1</p><h1 class="third-element">H</h1><p class="fourth-element " class="atomicWeight">1.0079</p>  </button></div>
+
+        <div class="element-periodic"><button class="box firstLine"><p class="first-element"></p><p class="first-element"></p><h1 class="third-element">.</h1><p class="fourth-element hidden">.</p>  </button></div>
+        <div class="element-periodic" > <button class="box firstLine"><p class="first-element"></p><p class="first-element"></p><h1 class="third-element">1</h1><p class="fourth-element hidden">1</p>  </button></div>
+        <div class="element-periodic" > <button class="box firstLine"><p class="first-element"></p><p class="first-element"></p><h1 class="third-element">2</h1><p class="fourth-element hidden">2</p>  </button></div>
+        <div class="element-periodic" > <button class="box firstLine"><p class="first-element"></p><p class="first-element"></p><h1 class="third-element">3</h1><p class="fourth-element hidden">3</p>  </button></div>
+        <div class="element-periodic" > <button class="box firstLine"><p class="first-element"></p><p class="first-element"></p><h1 class="third-element">4</h1><p class="fourth-element hidden">4</p>  </button></div>
+        <div class="element-periodic" > <button class="box firstLine"><p class="first-element"></p><p class="first-element"></p><h1 class="third-element">5</h1><p class="fourth-element hidden">5</p>  </button></div>
+        <div class="element-periodic" > <button class="box firstLine"><p class="first-element"></p><p class="first-element"></p><h1 class="third-element">6</h1><p class="fourth-element hidden">6</p>  </button></div>
+        <div class="element-periodic" > <button class="box firstLine"><p class="first-element"></p><p class="first-element"></p><h1 class="third-element">7</h1><p class="fourth-element hidden">7</p>  </button></div>
+        <div class="element-periodic" > <button class="box firstLine"><p class="first-element"></p><p class="first-element"></p><h1 class="third-element">8</h1><p class="fourth-element hidden">8</p>  </button></div>
+        <div class="element-periodic" > <button class="box firstLine"><p class="first-element"></p><p class="first-element"></p><h1 class="third-element">9</h1><p class="fourth-element hidden">9</p>  </button></div>
+        <div class="element-periodic" > <button class="box firstLine"><p class="first-element"></p><p class="first-element"></p><h1 class="third-element">0</h1><p class="fourth-element hidden">0</p>  </button></div>
+        <div class="element-periodic"  ><button class="box firstLine "><p class="first-element colour-test"></p><p class="first-element"></p><h1 class="third-element">(</h1><p class="fourth-element hidden">(</p>  </button></div>
+        <div class="element-periodic"  ><button class="box firstLine "><p class="first-element colour-test"></p><p class="first-element"></p><h1 class="third-element">)</h1><p class="fourth-element hidden">)</p>  </button></div>
+        <div class="element-periodic" > <button class=" firstLine deleteOne"><p class="first-element"></p><p class="first-element"></p><h1 class="third-element" >DEL</h1><p class="fourth-element hidden"></p>  </button></div>
+        <div class="element-periodic" > <button class=" firstLine clearAll"><p class="first-element"></p><p class="first-element"></p><h1 class="third-element" >AC</h1><p class="fourth-element hidden"></p>  </button></div>
+        <div class="element-periodic"  ><button class="box firstLine "><p class="first-element colour-test"></p><p class="first-element"></p><h1 class="third-element"></h1><p class="fourth-element"></p>  </button></div>
+        <div class="element-periodic" data-element > <button class="box Helium "><p class="first-element">Helium</p><p class="first-element">2</p><h1 class="third-element">He</h1><p class="fourth-element">4,0026</p>  </button></div>
+        <div class="element-periodic" data-element> <button class="box Lithium colour-test red"><p class="first-element">Lithium</p><p class="first-element">3</p><h1 class="third-element">Li</h1><p class="fourth-element">6.941</p>  </button></div>
+        <div class="element-periodic" data-element> <button class="box Beryllium orange "><p class="first-element">Beryllium</p><p class="first-element">4</p><h1 class="third-element">Be</h1><p class="fourth-element">9.0122</p>  </button></div>
+        <div class="element-periodic" > <button class="box colour-test hidden"><p class="first-element"></p><p class="first-element"></p><h1 class="third-element"></h1><p class="fourth-element"></p>  </button></div>
+        <div class="element-periodic" > <button class="box hidden"><p class="first-element"></p><p class="first-element"></p><h1 class="third-element"></h1><p class="fourth-element"></p>  </button></div>
+        <div class="element-periodic" > <button class="box hidden"><p class="first-element"></p><p class="first-element"></p><h1 class="third-element"></h1><p class="fourth-element"></p>  </button></div>
+        <div class="element-periodic" > <button class="box hidden"><p class="first-element"></p><p class="first-element"></p><h1 class="third-element"></h1><p class="fourth-element"></p>  </button></div>
+        <div class="element-periodic" > <button class="box hidden"><p class="first-element"></p><p class="first-element"></p><h1 class="third-element"></h1><p class="fourth-element"></p>  </button></div>
+        <div class="element-periodic" > <button class="box hidden "><p class="first-element"></p><p class="first-element"></p><h1 class="third-element"></h1><p class="fourth-element"></p>  </button></div>
+        <div class="element-periodic" > <button class="box hidden"><p class="first-element"></p><p class="first-element"></p><h1 class="third-element"></h1><p class="fourth-element"></p>  </button></div>
+        <div class="element-periodic" > <button class="box hidden"><p class="first-element"></p><p class="first-element"></p><h1 class="third-element"></h1><p class="fourth-element"></p>  </button></div>
+        <div class="element-periodic" > <button class="box hidden"><p class="first-element"></p><p class="first-element"></p><h1 class="third-element"></h1><p class="fourth-element"></p>  </button></div>
+        <div class="element-periodic" > <button class="box hidden"><p class="first-element"></p><p class="first-element"></p><h1 class="third-element"></h1><p class="fourth-element"></p>  </button></div>
+        <div class="element-periodic"data-element > <button class="box Boron lightBlue"><p class="first-element">Boron</p><p class="first-element">5</p><h1 class="third-element">B</h1><p class="fourth-element">10.811</p>  </button></div>
+        <div class="element-periodic" data-element> <button class="box Carbon blue"><p class="first-element">Carbon</p><p class="first-element">6</p><h1 class="third-element">C</h1><p class="fourth-element">12.011</p>  </button></div>
+        <div class="element-periodic"data-element > <button class="box Nitrogen blue"><p class="first-element">Nitrogen</p><p class="first-element">7</p><h1 class="third-element">N</h1><p class="fourth-element">14.0067</p>  </button></div>
+        <div class="element-periodic" data-element> <button class="box Oxygen blue"><p class="first-element">Oxygen</p><p class="first-element">8</p><h1 class="third-element">O</h1><p class="fourth-element">15.9994</p>  </button></div>
+        <div class="element-periodic" data-element> <button class="box purple "><p class="first-element">Flourine</p><p class="first-element">9</p><h1 class="third-element">F</h1><p class="fourth-element">18.998403</p>  </button></div>
+        <div class="element-periodic" data-element> <button class="box"><p class="first-element">Neon</p><p class="first-element">10</p><h1 class="third-element">Ne</h1><p class="fourth-element">20.179</p>  </button></div>
+        <div class="element-periodic"data-element > <button class="box red"><p class="first-element">Sodium</p><p class="first-element">11</p><h1 class="third-element">Na</h1><p class="fourth-element">22.98977</p>  </button></div>
+        <div class="element-periodic"data-element > <button class="box orange"><p class="first-element ">Magnesium</p><p class="first-element">12</p><h1 class="third-element">Mg</h1><p class="fourth-element">24.305</p>  </button></div>
+        <div class="element-periodic" > <button class="box hidden"><p class="first-element"></p><p class="first-element"></p><h1 class="third-element"></h1><p class="fourth-element"></p>  </button></div>
+        <div class="element-periodic" > <button class="box hidden"><p class="first-element"></p><p class="first-element"></p><h1 class="third-element"></h1><p class="fourth-element"></p>  </button></div>
+        <div class="element-periodic" > <button class="box hidden"><p class="first-element"></p><p class="first-element"></p><h1 class="third-element"></h1><p class="fourth-element"></p>  </button></div>
+        <div class="element-periodic" > <button class="box hidden"><p class="first-element"></p><p class="first-element"></p><h1 class="third-element"></h1><p class="fourth-element"></p>  </button></div>
+        <div class="element-periodic" > <button class="box hidden"><p class="first-element"></p><p class="first-element"></p><h1 class="third-element"></h1><p class="fourth-element"></p>  </button></div>
+        <div class="element-periodic" > <button class="box hidden"><p class="first-element"></p><p class="first-element"></p><h1 class="third-element"></h1><p class="fourth-element"></p>  </button></div>
+        <div class="element-periodic" > <button class="box hidden"><p class="first-element"></p><p class="first-element"></p><h1 class="third-element"></h1><p class="fourth-element"></p>  </button></div>
+        <div class="element-periodic" > <button class="box hidden"><p class="first-element"></p><p class="first-element"></p><h1 class="third-element"></h1><p class="fourth-element"></p>  </button></div>
+        <div class="element-periodic" > <button class="box hidden"><p class="first-element"></p><p class="first-element"></p><h1 class="third-element"></h1><p class="fourth-element"></p>  </button></div>
+        <div class="element-periodic" > <button class="box hidden"><p class="first-element"></p><p class="first-element"></p><h1 class="third-element"></h1><p class="fourth-element"></p>  </button></div>
+        <div class="element-periodic" data-element> <button class="box green"><p class="first-element">Aliuminium</p><p class="first-element">13</p><h1 class="third-element">Al</h1><p class="fourth-element">26.98154</p>  </button></div>
+        <div class="element-periodic"data-element > <button class="box lightBlue"><p class="first-element">Silicon</p><p class="first-element">14</p><h1 class="third-element">Si</h1><p class="fourth-element">28.0855</p>  </button></div>
+        <div class="element-periodic" data-element> <button class="box blue"><p class="first-element">Phosporus</p><p class="first-element">15</p><h1 class="third-element">P</h1><p class="fourth-element">30.97376</p>  </button></div>
+        <div class="element-periodic" data-element> <button class="box blue"><p class="first-element">Sulfur</p><p class="first-element">16</p><h1 class="third-element">S</h1><p class="fourth-element">32.06</p>  </button></div>
+        <div class="element-periodic" data-element> <button class="box purple"><p class="first-element">Chlorine</p><p class="first-element">17</p><h1 class="third-element">Cl</h1><p class="fourth-element">35.453</p>  </button></div>
+        <div class="element-periodic"data-element > <button class="box"><p class="first-element">Argon</p><p class="first-element">18</p><h1 class="third-element">Ar</h1><p class="fourth-element">39.948</p>  </button></div>
+        <div class="element-periodic"data-element > <button class="box red"><p class="first-element">Potassium</p><p class="first-element">19</p><h1 class="third-element">K</h1><p class="fourth-element">39.0983</p>  </button></div>
+        <div class="element-periodic"data-element > <button class="box orange"><p class="first-element">Calcium</p><p class="first-element">20</p><h1 class="third-element">Ca</h1><p class="fourth-element">40.08</p>  </button></div>
+        <div class="element-periodic"data-element > <button class="box yellow"><p class="first-element">Scandium</p><p class="first-element">21</p><h1 class="third-element">Sc</h1><p class="fourth-element">44.9559</p>  </button></div>
+        <div class="element-periodic"data-element > <button class="box yellow"><p class="first-element">Titanium</p><p class="first-element">22</p><h1 class="third-element">Ti</h1><p class="fourth-element">47.90</p>  </button></div>
+        <div class="element-periodic" data-element> <button class="box yellow"><p class="first-element">Vanadium</p><p class="first-element">23</p><h1 class="third-element">V</h1><p class="fourth-element">50.9415</p>  </button></div>
+        <div class="element-periodic" data-element> <button class="box yellow"><p class="first-element">Chromium</p><p class="first-element">24</p><h1 class="third-element">Cr</h1><p class="fourth-element">51.996</p>  </button></div>
+        <div class="element-periodic"data-element > <button class="box yellow"><p class="first-element">Manganese</p><p class="first-element">25</p><h1 class="third-element">Mn</h1><p class="fourth-element">54.9380</p>  </button></div>
+        <div class="element-periodic" data-element> <button class="box yellow"><p class="first-element">Iron</p><p class="first-element">26</p><h1 class="third-element">Fe</h1><p class="fourth-element">55.847</p>  </button></div>
+        <div class="element-periodic"data-element > <button class="box yellow"><p class="first-element">Cobalt</p><p class="first-element">27</p><h1 class="third-element">Co</h1><p class="fourth-element">58.9332</p>  </button></div>
+        <div class="element-periodic"data-element > <button class="box yellow"><p class="first-element">Nickel</p><p class="first-element">28</p><h1 class="third-element">Ni</h1><p class="fourth-element">58.70</p>  </button></div>
+        <div class="element-periodic" data-element> <button class="box yellow"><p class="first-element">Copper</p><p class="first-element">29</p><h1 class="third-element">Cu</h1><p class="fourth-element">63.546</p>  </button></div>
+        <div class="element-periodic"data-element > <button class="box yellow"><p class="first-element">Zinc</p><p class="first-element">30</p><h1 class="third-element">Zn</h1><p class="fourth-element">65.38</p>  </button></div>
+        <div class="element-periodic"data-element > <button class="box green "><p class="first-element">Gallium</p><p class="first-element">31</p><h1 class="third-element">Ga</h1><p class="fourth-element">69.72</p>  </button></div>
+        <div class="element-periodic" data-element> <button class="box lightBlue"><p class="first-element">Germanium</p><p class="first-element">32</p><h1 class="third-element">Ge</h1><p class="fourth-element">72.59</p>  </button></div>
+        <div class="element-periodic" data-element> <button class="box lightBlue"><p class="first-element">Arsenic</p><p class="first-element">33</p><h1 class="third-element">As</h1><p class="fourth-element">74.9216</p>  </button></div>
+        <div class="element-periodic" data-element> <button class="box blue "><p class="first-element">Selenium</p><p class="first-element">34</p><h1 class="third-element">Se</h1><p class="fourth-element">78.96</p>  </button></div>
+        <div class="element-periodic" data-element> <button class="box purple "><p class="first-element">Bromine</p><p class="first-element">35</p><h1 class="third-element">Br</h1><p class="fourth-element">79.904</p>  </button></div>
+        <div class="element-periodic"data-element > <button class="box "><p class="first-element">Krypton</p><p class="first-element">36</p><h1 class="third-element">Kr</h1><p class="fourth-element">83.80</p>  </button></div>
+        <div class="element-periodic"data-element > <button class="box red "><p class="first-element">Rubidium</p><p class="first-element">37</p><h1 class="third-element">Rb</h1><p class="fourth-element">85.4678</p>  </button></div>
+        <div class="element-periodic"data-element > <button class="box orange"><p class="first-element">Strontium</p><p class="first-element">38</p><h1 class="third-element">Sr</h1><p class="fourth-element">87.62</p>  </button></div>
+        <div class="element-periodic" data-element> <button class="box yellow"><p class="first-element">Yttrium</p><p class="first-element">39</p><h1 class="third-element">Y</h1><p class="fourth-element">88.9059</p>  </button></div>
+        <div class="element-periodic" data-element> <button class="box yellow"><p class="first-element">Zirconium</p><p class="first-element">40</p><h1 class="third-element">Zr</h1><p class="fourth-element">91.22</p>  </button></div>
+        <div class="element-periodic"data-element > <button class="box yellow"><p class="first-element">Niobium</p><p class="first-element">41</p><h1 class="third-element">Nb</h1><p class="fourth-element">92.9064</p>  </button></div>
+        <div class="element-periodic"data-element > <button class="box yellow"><p class="first-element">Molybdenum</p><p class="first-element">42</p><h1 class="third-element">Mo</h1><p class="fourth-element">95.94</p>  </button></div>
+        <div class="element-periodic" data-element> <button class="box yellow"><p class="first-element">Technetium</p><p class="first-element">43</p><h1 class="third-element">Tc</h1><p class="fourth-element">98</p>  </button></div>
+        <div class="element-periodic"data-element > <button class="box yellow"><p class="first-element">Ruthenium</p><p class="first-element">44</p><h1 class="third-element">Ru</h1><p class="fourth-element">101.07</p>  </button></div>
+        <div class="element-periodic"data-element > <button class="box yellow"><p class="first-element">Rhodium</p><p class="first-element">45</p><h1 class="third-element">Rh</h1><p class="fourth-element">102.9055</p>  </button></div>
+        <div class="element-periodic"data-element > <button class="box yellow"><p class="first-element">Palladium</p><p class="first-element">46</p><h1 class="third-element">Pd</h1><p class="fourth-element">106.4</p>  </button></div>
+        <div class="element-periodic"data-element > <button class="box yellow"><p class="first-element">Silver</p><p class="first-element">47</p><h1 class="third-element">Ag</h1><p class="fourth-element">107.868</p>  </button></div>
+        <div class="element-periodic"data-element > <button class="box yellow"><p class="first-element">Cadmium</p><p class="first-element">48</p><h1 class="third-element">Cd</h1><p class="fourth-element">112.41</p>  </button></div>
+        <div class="element-periodic"data-element > <button class="box green"><p class="first-element">Indium</p><p class="first-element">49</p><h1 class="third-element">In</h1><p class="fourth-element">114.82</p>  </button></div>
+        <div class="element-periodic" data-element> <button class="box green"><p class="first-element">Tin</p><p class="first-element">50</p><h1 class="third-element">Sn</h1><p class="fourth-element">118.69</p>  </button></div>
+        <div class="element-periodic" data-element> <button class="box lightBlue"><p class="first-element">Antimony</p><p class="first-element">51</p><h1 class="third-element">Sb</h1><p class="fourth-element">121.75</p>  </button></div>
+        <div class="element-periodic"data-element > <button class="box lightBlue"><p class="first-element">Tellurium</p><p class="first-element">52</p><h1 class="third-element">Te</h1><p class="fourth-element">127.60</p>  </button></div>
+        <div class="element-periodic"data-element > <button class="box purple"><p class="first-element">Iodine</p><p class="first-element">53</p><h1 class="third-element">I</h1><p class="fourth-element">126.9045</p>  </button></div>
+        <div class="element-periodic"data-element > <button class="box"><p class="first-element">Xenon</p><p class="first-element">54</p><h1 class="third-element">Xe</h1><p class="fourth-element">131.30</p>  </button></div>
+        <div class="element-periodic"data-element > <button class="box red"><p class="first-element">Caesium</p><p class="first-element">55</p><h1 class="third-element">Cs</h1><p class="fourth-element">132.9054</p>  </button></div>
+        <div class="element-periodic;" data-element> <button class="box orange"><p class="first-element">Barium</p><p class="first-element">56</p><h1 class="third-element">Ba</h1><p class="fourth-element">137.33</p>  </button></div>
+        <div class="element-periodic" data-element> <button class="box lightPink"><p class="first-element"></p><p class="first-element"></p><h1 class="third-element " id="number">57-71</h1><p class="fourth-element"></p>  </button></div>
+        <div class="element-periodic"data-element > <button class="box yellow " ><p class="first-element">Hafnium</p><p class="first-element">58</p><h1 class="third-element">Hf</h1><p class="fourth-element">178.49</p>  </button></div>
+        <div class="element-periodic" data-element> <button class="box yellow " ><p class="first-element">Tantalum</p><p class="first-element">74</p><h1 class="third-element">Ta</h1><p class="fourth-element">180.9479</p>  </button></div>
+        <div class="element-periodic" data-element> <button class="box yellow " ><p class="first-element">Tungsten</p><p class="first-element">75</p><h1 class="third-element">W</h1><p class="fourth-element">183.85</p>  </button></div>
+        <div class="element-periodic" data-element> <button class="box yellow " ><p class="first-element">Rhenium</p><p class="first-element">59</p><h1 class="third-element">Re</h1><p class="fourth-element">186.207</p>  </button></div>
+        <div class="element-periodic"data-element > <button class="box yellow " ><p class="first-element">Osmium</p><p class="first-element">60</p><h1 class="third-element">Os</h1><p class="fourth-element">190.2</p>  </button></div>
+        <div class="element-periodic"data-element > <button class="box yellow " ><p class="first-element">Iridium</p><p class="first-element">61</p><h1 class="third-element">Ir</h1><p class="fourth-element">192.22</p>  </button></div>
+        <div class="element-periodic" data-element> <button class="box yellow " ><p class="first-element">Platinum</p><p class="first-element">62</p><h1 class="third-element">Pt</h1><p class="fourth-element">195.09</p>  </button></div>
+        <div class="element-periodic" data-element> <button class="box yellow " ><p class="first-element">Gold</p><p class="first-element">63</p><h1 class="third-element">Au</h1><p class="fourth-element">196.9665</p>  </button></div>
+        <div class="element-periodic"data-element > <button class="box yellow " ><p class="first-element">Mercury</p><p class="first-element">64</p><h1 class="third-element">Hg</h1><p class="fourth-element">200.59</p>  </button></div>
+        <div class="element-periodic"data-element > <button class="box  green" ><p class="first-element">Thalium</p><p class="first-element">65</p><h1 class="third-element">Tl</h1><p class="fourth-element">204.37</p>  </button></div>
+        <div class="element-periodic"data-element > <button class="box green"><p class="first-element">Lead</p><p class="first-element">66</p><h1 class="third-element">Pb</h1><p class="fourth-element">207.2</p>  </button></div>
+        <div class="element-periodic" data-element> <button class="box green"><p class="first-element">Bismuth</p><p class="first-element">67</p><h1 class="third-element">Bi</h1><p class="fourth-element">208.9804</p>  </button></div>
+        <div class="element-periodic"data-element > <button class="box lightBlue"><p class="first-element">Polonium</p><p class="first-element">68</p><h1 class="third-element">Po</h1><p class="fourth-element">209</p>  </button></div>
+        <div class="element-periodic" data-element> <button class="box purple"><p class="first-element">Astatine</p><p class="first-element">69</p><h1 class="third-element">At</h1><p class="fourth-element">210</p>  </button></div>
+        <div class="element-periodic"data-element > <button class="box"><p class="first-element">Radon</p><p class="first-element">70</p><h1 class="third-element">Rn</h1><p class="fourth-element">222</p>  </button></div>
+        <div class="element-periodic" data-element> <button class="box red"><p class="first-element">Francium</p><p class="first-element">71</p><h1 class="third-element">Fr</h1><p class="fourth-element">223</p>  </button></div>
+        <div class="element-periodic;" data-element> <button class="box orange"><p class="first-element">Radium</p><p class="first-element">72</p><h1 class="third-element">Ra</h1><p class="fourth-element">226.0254</p>  </button></div>
+        <div class="element-periodic"data-element > <button class="box pink "><p class="first-element"></p><p class="first-element"></p><h1 class="third-element" id="number">89-103</h1><p class="fourth-element"></p></button></div>
+        <div class="element-periodic"data-element > <button class="box yellow "><p class="first-element">Rutherfordium</p><p class="first-element">76</p><h1 class="third-element">Rf</h1><p class="fourth-element">261</p>  </button></div>
+        <div class="element-periodic" data-element> <button class="box yellow "><p class="first-element">Dubnium</p><p class="first-element">77</p><h1 class="third-element">Db</h1><p class="fourth-element">262</p>  </button></div>
+        <div class="element-periodic" data-element> <button class="box yellow "><p class="first-element">Seaborgium</p><p class="first-element">78</p><h1 class="third-element">Sg</h1><p class="fourth-element">263</p>  </button></div>
+        <div class="element-periodic" data-element> <button class="box yellow "><p class="first-element">Bohrium</p><p class="first-element">79</p><h1 class="third-element">Bh</h1><p class="fourth-element">262</p>  </button></div>
+        <div class="element-periodic" data-element> <button class="box yellow "><p class="first-element">Hassium</p><p class="first-element">80</p><h1 class="third-element">Hs</h1><p class="fourth-element">255</p>  </button></div>
+        <div class="element-periodic"data-element > <button class="box yellow "><p class="first-element">Meitnerium</p><p class="first-element">81</p><h1 class="third-element">Mt</h1><p class="fourth-element">256</p>  </button></div>
+        <div class="element-periodic"data-element > <button class="box yellow "><p class="first-element">Darmstadtium</p><p class="first-element">82</p><h1 class="third-element">Ds</h1><p class="fourth-element">269</p>  </button></div>
+        <div class="element-periodic"data-element > <button class="box yellow "><p class="first-element">Roentgenium</p><p class="first-element">83</p><h1 class="third-element">Rg</h1><p class="fourth-element">272</p>  </button></div>
+        <div class="element-periodic"data-element > <button class="box yellow "><p class="first-element">Copernicium</p><p class="first-element">84</p><h1 class="third-element">Cn</h1><p class="fourth-element">285</p>  </button></div>
+        <div class="element-periodic" data-element> <button class="box green"><p class="first-element">Nihonium</p><p class="first-element">85</p><h1 class="third-element">Nh</h1><p class="fourth-element">286</p>  </button></div>
+        <div class="element-periodic" data-element> <button class="box green"><p class="first-element">Flerovium</p><p class="first-element">86</p><h1 class="third-element">Fl</h1><p class="fourth-element">289</p>  </button></div>
+        <div class="element-periodic"data-element > <button class="box green"><p class="first-element">Moscovium</p><p class="first-element">87</p><h1 class="third-element">Mc</h1><p class="fourth-element">290</p>  </button></div>
+        <div class="element-periodic" data-element> <button class="box lightBlue"><p class="first-element">Livermorium</p><p class="first-element">88</p><h1 class="third-element">Lv</h1><p class="fourth-element">293</p>  </button></div>
+        <div class="element-periodic"data-element > <button class="box purple"><p class="first-element">Tennessine</p><p class="first-element">89</p><h1 class="third-element">Ts</h1><p class="fourth-element">294</p>  </button></div>
+        <div class="element-periodic"data-element > <button class="box"><p class="first-element">Oganesson</p><p class="first-element">90</p><h1 class="third-element">Og</h1><p class="fourth-element">294</p>  </button></div>
+
+
+
+        <!--TEST TEST START-->
+
+        <!--TEST END-->
+</div>
+
+
+</div>
+
+</div>
+<div class="secondperiodic">
+<div class="periodic-table text-center">
+
+
+<div class="element-grid-two">
+
+    <div class="element-periodic  span-two" > <button class="box  hydrogen lightPink "><p class="first-element"></p><p class="first-element"></p> <h1 class="third-element">6</h1><p class="fourth-element"></p>  </button></div>
+    <div class="element-periodic  span-two"data-element > <button class="box hydrogen lightPink "><p class="first-element">Lanthanum</p><p class="first-element">1</p><h1 class="third-element">La</h1><p class="fourth-element">138.9055</p>  </button></div>
+    <div class="element-periodic  span-two colour-test" data-element> <button class="box hydrogen lightPink "><p class="first-element">Cerium</p><p class="first-element">1</p><h1 class="third-element">Ce</h1><p class="fourth-element">140.12</p>  </button></div>
+    <div class="element-periodic  span-two" data-element> <button class="box hydrogen lightPink"><p class="first-element">Praseodymium</p><p class="first-element">1</p><h1 class="third-element">Pr</h1><p class="fourth-element">140.9077</p>  </button></div>
+    <div class="element-periodic  span-two"data-element > <button class="box hydrogen lightPink"><p class="first-element">Neodymium</p><p class="first-element">1</p><h1 class="third-element">Nd</h1><p class="fourth-element">144.24</p>  </button></div>
+    <div class="element-periodic  span-two" data-element> <button class="box hydrogen lightPink"><p class="first-element">Promethium</p><p class="first-element">1</p><h1 class="third-element">Pm</h1><p class="fourth-element">145</p>  </button></div>
+    <div class="element-periodic  span-two"data-element > <button class="box hydrogen lightPink"><p class="first-element">Samarium</p><p class="first-element">1</p><h1 class="third-element">Sm</h1><p class="fourth-element">150.4</p>  </button></div>
+    <div class="element-periodic  span-two" data-element> <button class="box hydrogen lightPink"><p class="first-element">Europium</p><p class="first-element">1</p><h1 class="third-element">Eu</h1><p class="fourth-element">151.96</p>  </button></div>
+    <div class="element-periodic  span-two"data-element > <button class="box hydrogen lightPink"><p class="first-element">Gadolinium</p><p class="first-element">1</p><h1 class="third-element">Gd</h1><p class="fourth-element">157.25</p>  </button></div>
+    <div class="element-periodic  span-two"data-element > <button class="box hydrogen lightPink"><p class="first-element">Terbium</p><p class="first-element">1</p><h1 class="third-element">Tb</h1><p class="fourth-element">158.9254</p>  </button></div>
+    <div class="element-periodic  span-two" data-element> <button class="box hydrogen lightPink"><p class="first-element">Dysprosium</p><p class="first-element">1</p><h1 class="third-element">Dy</h1><p class="fourth-element">162.50</p>  </button></div>
+    <div class="element-periodic  span-two" data-element> <button class="box hydrogen lightPink"><p class="first-element">Holmium</p><p class="first-element">1</p><h1 class="third-element">Ho</h1><p class="fourth-element">164.9304</p>  </button></div>
+    <div class="element-periodic  span-two" data-element> <button class="box hydrogen lightPink"><p class="first-element">Erbium</p><p class="first-element">1</p><h1 class="third-element">Er</h1><p class="fourth-element">167.26</p>  </button></div>
+    <div class="element-periodic  span-two" data-element> <button class="box hydrogen lightPink"><p class="first-element">Thulium</p><p class="first-element">1</p><h1 class="third-element">Tm</h1><p class="fourth-element">168.9342</p>  </button></div>
+    <div class="element-periodic  span-two" data-element> <button class="box hydrogen lightPink"><p class="first-element">Ytterbium</p><p class="first-element">1</p><h1 class="third-element">Yb</h1><p class="fourth-element">173.04</p>  </button></div>
+    <div class="element-periodic  span-two" data-element> <button class="box hydrogen lightPink"><p class="first-element">Lutetium</p><p class="first-element">1</p><h1 class="third-element">Lu</h1><p class="fourth-element">174.967</p>  </button></div>
+    <div class="element-periodic  span-two" > <button class="box hydrogen pink"><p class="first-element"></p><p class="first-element"></p> <h1 class="third-element">7</h1><p class="fourth-element"></p>  </button></div>
+    <div class="element-periodic  span-two" data-element> <button class="box hydrogen pink "><p class="first-element">Actinium</p><p class="first-element">1</p><h1 class="third-element">Ac</h1><p class="fourth-element">227.0278</p>  </button></div>
+    <div class="element-periodic  span-two" data-element> <button class="box hydrogen pink "><p class="first-element">Thorium</p><p class="first-element">1</p><h1 class="third-element">Th</h1><p class="fourth-element">232.0381</p>  </button></div>
+    <div class="element-periodic  span-two" data-element> <button class="box hydrogen pink "><p class="first-element">Protactinium</p><p class="first-element">1</p><h1 class="third-element">Pa</h1><p class="fourth-element">231.0359</p>  </button></div>
+    <div class="element-periodic  span-two" data-element> <button class="box hydrogen pink" ><p class="first-element">Uranium</p><p class="first-element">1</p><h1 class="third-element">U</h1><p class="fourth-element">238.029</p>  </button></div>
+    <div class="element-periodic  span-two" data-element=""> <button class="box hydrogen pink "><p class="first-element">Neptunium</p><p class="first-element">1</p><h1 class="third-element">Np</h1><p class="fourth-element">237.0482</p>  </button></div>
+    <div class="element-periodic  span-two" data-element> <button class="box hydrogen pink"><p class="first-element">Plutonium</p><p class="first-element">1</p><h1 class="third-element">Pu</h1><p class="fourth-element">242</p>  </button></div>
+    <div class="element-periodic  span-two" data-element> <button class="box hydrogen pink"><p class="first-element">Americium</p><p class="first-element">1</p><h1 class="third-element">Am</h1><p class="fourth-element">243</p>  </button></div>
+    <div class="element-periodic  span-two" data-element> <button class="box hydrogen pink"><p class="first-element">Curium</p><p class="first-element">1</p><h1 class="third-element">Cm</h1><p class="fourth-element">247</p>  </button></div>
+    <div class="element-periodic  span-two"data-element > <button class="box hydrogen pink"><p class="first-element">Berkelium</p><p class="first-element">1</p><h1 class="third-element">Bk</h1><p class="fourth-element">247</p>  </button></div>
+    <div class="element-periodic  span-two" data-element> <button class="box hydrogen pink"><p class="first-element">Californium</p><p class="first-element">1</p><h1 class="third-element">Cf</h1><p class="fourth-element">251</p>  </button></div>
+    <div class="element-periodic  span-two" data-element> <button class="box hydrogen pink"><p class="first-element">Einsteinium</p><p class="first-element">1</p><h1 class="third-element">Es</h1><p class="fourth-element">252</p>  </button></div>
+    <div class="element-periodic  span-two" data-element> <button class="box hydrogen pink"><p class="first-element">Fermium</p><p class="first-element">1</p><h1 class="third-element">Fm</h1><p class="fourth-element">257</p>  </button></div>
+    <div class="element-periodic  span-two" data-element> <button class="box hydrogen pink"><p class="first-element">Mendelevium</p><p class="first-element">1</p><h1 class="third-element">Md</h1><p class="fourth-element">258</p>  </button></div>
+    <div class="element-periodic  span-two" data-element> <button class="box hydrogen pink"><p class="first-element">Nobelium</p><p class="first-element">1</p><h1 class="third-element">No</h1><p class="fourth-element">250</p>  </button></div>
+    <div class="element-periodic  span-two" data-element> <button class="box hydrogen pink"><p class="first-element">Lawrencium</p><p class="first-element">1</p><h1 class="third-element">Lr</h1><p class="fourth-element">260</p>  </button></div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- Footer -->
+<footer class="page-footer font-small blue">
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3 verticallyAlign">© 2021 Copyright:
+      <a href="#" >Mol Calculator</a>
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
+  <!-- Footer -->
+  <script src="script3.js"></script>
+</body>
+</html>
